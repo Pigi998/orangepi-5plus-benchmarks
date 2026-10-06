@@ -1,0 +1,21 @@
+{
+  "device": "Orange Pi 5 Plus (RK3588, 16GB RAM)",
+  "backend": "Rockchip RKLLM Native Runtime (3x NPU cores, 6 TOPS INT8/INT4)",
+  "timestamp": "2026-10-01T20:35:21Z",
+  "npu_models": [
+    {
+      "model_file": "qwen1.5-0.5B.rkllm",
+      "model_path": "tools/qwen1.5-0.5B.rkllm",
+      "npu_cores_used": 3,
+      "max_tokens": 256,
+      "context_len": 512,
+      "generated_tokens": 256,
+      "eval_tok_per_sec": 21.55,
+      "ttft_ms": 96.4,
+      "total_wall_time_s": 18.54,
+      "avg_system_cpu_percent": 39.4,
+      "temp_before_c": 66.5,
+      "temp_after_c": 72.1
+    }
+  ]
+}

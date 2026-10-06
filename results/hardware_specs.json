@@ -1,0 +1,111 @@
+{
+  "device": {
+    "model": "Orange Pi 5 Plus",
+    "manufacturer": "Orange Pi",
+    "soc": "Rockchip RK3588 (8nm)",
+    "kernel": "Linux 6.1.99-rockchip-rk3588 aarch64",
+    "os": "Ubuntu 22.04.5 LTS (Jammy Jellyfish)"
+  },
+  "cpu": {
+    "total_cores": 8,
+    "architecture": "aarch64",
+    "clusters": [
+      {
+        "name": "LITTLE",
+        "cores": "0-3",
+        "microarchitecture": "ARM Cortex-A55",
+        "max_freq_mhz": 1800,
+        "governor": "ondemand"
+      },
+      {
+        "name": "BIG_0",
+        "cores": "4-5",
+        "microarchitecture": "ARM Cortex-A76",
+        "max_freq_mhz": 2256,
+        "governor": "ondemand"
+      },
+      {
+        "name": "BIG_1",
+        "cores": "6-7",
+        "microarchitecture": "ARM Cortex-A76",
+        "max_freq_mhz": 2256,
+        "governor": "ondemand"
+      }
+    ],
+    "cache": {
+      "l1d": "384 KiB",
+      "l1i": "384 KiB",
+      "l2": "2.5 MiB",
+      "l3": "3 MiB"
+    }
+  },
+  "memory": {
+    "total_ram_kb": 16347128,
+    "total_ram_gb": 16,
+    "type": "LPDDR4x",
+    "zram_swap_gb": 7.8
+  },
+  "storage": {
+    "model": "Samsung PM981a (MZVLB256HBHQ-000L7)",
+    "capacity_gb": 256,
+    "interface": "M.2 2280 NVMe PCIe 3.0 x4",
+    "link_status": {
+      "speed": "8 GT/s",
+      "width": "x4",
+      "max_link_speed": "8 GT/s",
+      "max_link_width": "x4"
+    },
+    "controller": "Samsung Phoenix",
+    "nand_type": "96-layer V-NAND TLC",
+    "dram_cache": "512MB LPDDR4",
+    "firmware": "4M2QEXH7",
+    "smart_health": {
+      "critical_warning": 0,
+      "available_spare_percent": 100,
+      "percent_used": 26,
+      "power_on_hours": 7323,
+      "temperature_celsius": 45
+    }
+  },
+  "neural_processing_unit": {
+    "name": "Rockchip NPU (RKNPU2)",
+    "cores": 3,
+    "peak_performance": "6 TOPS",
+    "data_types": ["INT4", "INT8", "FP16"],
+    "driver_version": "0.9.8",
+    "device_node": "/dev/rknpu_mem"
+  },
+  "graphics_processing_unit": {
+    "name": "ARM Mali-G610 MP4",
+    "apis": ["Vulkan 1.2", "OpenCL 2.2", "OpenGL ES 3.2"]
+  },
+  "networking": {
+    "ethernet_ports": [
+      {
+        "interface": "enP4p65s0",
+        "controller": "Realtek RTL8125 2.5GbE Controller",
+        "pcie_slot": "0004:41:00.0"
+      },
+      {
+        "interface": "enP3p49s0",
+        "controller": "Realtek RTL8125 2.5GbE Controller",
+        "pcie_slot": "0003:31:00.0"
+      }
+    ],
+    "wireless": {
+      "interface": "wlan0",
+      "status": "connected"
+    }
+  },
+  "thermal_and_cooling": {
+    "active_fan": "None (Bare-die / uncooled board; tested without heatsink or fan)",
+    "zones": [
+      "soc-thermal",
+      "bigcore0-thermal",
+      "bigcore1-thermal",
+      "littlecore-thermal",
+      "gpu-thermal",
+      "npu-thermal"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-01T18:36:27Z",
+  "hardware": {
+    "device": "Orange Pi 5 Plus",
+    "soc": "Rockchip RK3588",
+    "ram": "16GB LPDDR4x",
+    "storage": "Samsung PM981a 256GB NVMe PCIe 3.0 x4"
+  },
+  "cpu_benchmarks": {
+    "7zip_single_core_mips": 2831,
+    "7zip_multi_core_mips": 13015,
+    "sysbench_cpu_events_per_sec": 4343.94
+  },
+  "storage_fio": {
+    "sequential_read_mb_s": 2862.33,
+    "sequential_write_mb_s": 2172.94,
+    "random_4k_read_iops": 197108,
+    "random_4k_write_iops": 153771,
+    "mixed_4k_read_iops": 69771,
+    "mixed_4k_write_iops": 29930
+  },
+  "thermals": {
+    "idle_temp_c": 62.8,
+    "peak_temp_c": 78.5,
+    "cooldown_temp_c": 63.8
+  }
+}

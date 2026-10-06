@@ -1,0 +1,14 @@
+# Build artifacts
+*.o
+*.so
+
+# Model weights
+*.rkllm
+*.bin
+*.gguf
+
+# Python caches
+__pycache__/
+*.pyc
+# Scratch & temporary files
+.bench_scratch/
